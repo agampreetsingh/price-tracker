@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Price Tracker</title>
+</head>
+
+<body>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- Image and text -->
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="material-icons">
+                    trending_down
+                    </span>
+                 Price Tracker
+            </a>
+            <span class="navbar-text">
+                ...a place to track prices of your favourite items in your shopping list
+              </span>
+        </div>
+    </nav>
+<br>
+
+            <div class="row">
+              <div class="col-1">
+                
+              </div>
+              <div class="col-10">
+                <div class="alert alert-primary" role="alert">
+                    <h4 class="alert-heading">Your Tracking List <span class="material-icons">
+                        shopping_cart
+                        </span></h4>
+                    <p><em>Keeping an eye on something to buy online? In case you are waiting for the price of your a product in your wishlist, to decrease, just paste the URL of your favourite product here and we'll send you an alert when the price goes down! <br>Come on! Don't be shy...</em></p>
+                    <hr>
+                    <div class="list-group">
+                        
+                        <div class="list-group-item list-group-item-action">
+                            <div data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1" id = "product_name">{Product Name} <span class="material-icons" id="change_trend" style="color: red;">trending_up</span></h5>
+                            <small>Last Updated: <small class="text-muted" id="last_updated">{some minutes ago}</small></small>
+                          </div>
+                          <p class="mb-1" id="price_change">{Price change by some Rupees}</p>
+                          <small class="text-muted">Original Price: <span id="original_price">{Some Rupees}</span></small>
+                        </div>
+                          <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                             <div class="row">
+                                 <div class = "col-md-3 col-sm-3">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/81Aznr79RoL._SX679_.jpg" height="20%" class="img-thumbnail img-responsive rounded float-start" alt="...">
+                                 </div>
+                                 <div class="col-md-9 col-sm-9">
+                                    <div class="alert alert-secondary" role="alert">
+                                        <h4 class="alert-heading" id="product_name">{Full name}</h4>
+                                        <p><a href="#" class="alert-link" id="product_url">{Some URL}</a></p>
+                                        
+                                        <hr>
+                                        <p class="mb-0">Tracking Since: <span id="tracking_since">{some date}</span></p>
+                                        <br>
+                                        <br>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                              <tr>
+                                                
+                                                <th scope="col">Current Price</th>
+                                                <th scope="col">Starting Price</th>
+                                                <th scope="col">Difference</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                               
+                                                <td id="current_price">{current price}</td>
+                                                <td id="original_price">{Starting Price}</td>
+                                                <td id="price_difference">{Difference}</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                      </div>
+                                 </div>
+                             </div>
+                            </div>
+                          </div>
+                            
+                        </div>
+                        
+                      </div>
+                  </div>
+              </div>
+              <div class="col-1">
+                
+              </div>
+            </div>
+
+
+</body>
+
+</html>
